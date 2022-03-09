@@ -1,6 +1,6 @@
 import express from "express"
 import winston, { loggers } from "winston"
-import accountsRouter from "./routes/accounts.js"
+import accountsRouter from "./routes/accounts.routes.js"
 import { promises as fs } from "fs"
 const { readFile, writeFile } = fs
 import cors from "cors"
