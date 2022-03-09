@@ -26,3 +26,35 @@
 2022-03-09T22:48:45.710Z [primeiroProjeto] info: API em execução
 2022-03-09T22:49:47.158Z [primeiroProjeto] info: POST /account- {"id":10,"nome":"Lucas","saldo":80}
 2022-03-09T22:58:29.459Z [primeiroProjeto] info: API em execução
+2022-03-09T22:59:22.163Z [primeiroProjeto] info: API em execução
+2022-03-09T23:37:30.058Z [primeiroProjeto] info: API em execução
+2022-03-09T23:37:52.993Z [primeiroProjeto] info: API em execução
+2022-03-09T23:38:32.049Z [primeiroProjeto] info: API em execução
+2022-03-09T23:39:16.100Z [primeiroProjeto] info: API em execução
+2022-03-09T23:41:09.511Z [primeiroProjeto] info: API em execução
+2022-03-09T23:41:11.445Z [primeiroProjeto] info: API em execução
+2022-03-09T23:42:15.468Z [primeiroProjeto] info: API em execução
+2022-03-09T23:44:41.436Z [primeiroProjeto] info: API em execução
+2022-03-09T23:45:44.508Z [primeiroProjeto] info: API em execução
+2022-03-09T23:45:52.531Z [primeiroProjeto] info: API em execução
+2022-03-09T23:47:33.487Z [primeiroProjeto] info: API em execução
+2022-03-09T23:50:37.306Z [primeiroProjeto] info: API em execução
+2022-03-09T23:50:50.817Z [primeiroProjeto] info: API em execução
+2022-03-09T23:50:55.016Z [primeiroProjeto] info: API em execução
+2022-03-09T23:51:04.195Z [primeiroProjeto] info: API em execução
+2022-03-09T23:51:49.438Z [primeiroProjeto] info: GET /account
+2022-03-09T23:52:54.487Z [primeiroProjeto] info: DELETE /account/:id - 1
+2022-03-09T23:52:59.102Z [primeiroProjeto] info: GET /account
+2022-03-09T23:53:00.502Z [primeiroProjeto] info: GET /account
+2022-03-09T23:53:05.750Z [primeiroProjeto] info: DELETE /account/:id - 1
+2022-03-09T23:53:15.669Z [primeiroProjeto] info: GET /account
+2022-03-09T23:53:26.610Z [primeiroProjeto] error: GET /account - account is not defined
+2022-03-09T23:53:32.915Z [primeiroProjeto] error: GET /account - account is not defined
+2022-03-09T23:53:37.834Z [primeiroProjeto] error: GET /account - account is not defined
+2022-03-09T23:54:59.172Z [primeiroProjeto] info: API em execução
+2022-03-09T23:55:17.436Z [primeiroProjeto] info: API em execução
+2022-03-09T23:55:21.416Z [primeiroProjeto] info: GET /account/:id
+2022-03-09T23:55:25.099Z [primeiroProjeto] info: GET /account/:id
+2022-03-09T23:55:30.647Z [primeiroProjeto] info: DELETE /account/:id - 1
+2022-03-09T23:55:31.922Z [primeiroProjeto] info: DELETE /account/:id - 1
+2022-03-09T23:55:32.454Z [primeiroProjeto] info: DELETE /account/:id - 1
