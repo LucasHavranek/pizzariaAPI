@@ -1,16 +1,13 @@
 import express from "express"
 const router = express.Router()
-import { promises as fs } from "fs"
-const { readFile, writeFile } = fs
-import cors from "cors"
 import accountController from "../controllers/accounts.controller.js"
 
 router.post("/", accountController.createAccount)
 router.get("/", accountController.getAccounts)
 router.get("/:id", accountController.getAccountId)
 router.delete("/:id", accountController.deleteAccount)
-router.put("/", accountController.putAccount)
-router.patch("/updateSaldo", accountController.patchAccount)
+router.put("/", accountController.updateAccount)
+router.patch("/updateSaldo", accountController.updateBalance)
 
 router.use((err, req, res, next) => {
     logger.error(`${req.method} ${req.baseUrl} - ${err.message}`)

@@ -1,5 +1,7 @@
 import { promises as fs } from "fs"
 const { readFile, writeFile } = fs
+import accountService from "../services/accounts.services.js"
+
 
 async function createAccount(req, res, next) {
     try {
@@ -9,14 +11,10 @@ async function createAccount(req, res, next) {
             throw new Error("Nome e saldo são obrigatórios")
         }
 
-        const data = JSON.parse(await readFile(global.fileName))
-
-        account = { id: data.nextId++, nome: account.nome, saldo: account.saldo }
-        data.accounts.push(account)
-        await writeFile(global.fileName, JSON.stringify(data, null, 2))
-
+        account = await accountService.createAccount(account)
         res.send(account)
         logger.info(`POST /account- ${JSON.stringify(account)}`)
+
     } catch (err) {
         next(err)
     }
@@ -24,9 +22,7 @@ async function createAccount(req, res, next) {
 
 async function getAccounts(req, res, next) {
     try {
-        const data = JSON.parse(await readFile(global.fileName))
-        delete data.nextId
-        res.send(data)
+        res.send(await accountService.getAccounts())
         logger.info("GET /account")
     } catch (err) {
         next(err)
@@ -56,7 +52,7 @@ async function deleteAccount(req, res, next) {
     }
 }
 
-async function putAccount(req, res, next) {
+async function updateAccount(req, res, next) {
     try {
         const account = req.body
         const data = JSON.parse(await readFile(global.fileName))
@@ -80,7 +76,7 @@ async function putAccount(req, res, next) {
     }
 }
 
-async function patchAccount(req, res, next) {
+async function updateBalance(req, res, next) {
     try {
         const account = req.body
         const data = JSON.parse(await readFile(global.fileName))
@@ -109,6 +105,6 @@ export default {
     getAccounts,
     getAccountId,
     deleteAccount,
-    putAccount,
-    patchAccount
+    updateAccount,
+    updateBalance
 }

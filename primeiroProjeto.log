@@ -13,3 +13,16 @@
 2022-03-09T02:34:37.885Z [primeiroProjeto] info: API em execução
 2022-03-09T02:35:02.224Z [primeiroProjeto] info: API em execução
 2022-03-09T02:35:08.592Z [primeiroProjeto] info: API em execução
+2022-03-09T02:36:51.815Z [primeiroProjeto] info: API em execução
+2022-03-09T02:37:34.470Z [primeiroProjeto] info: API em execução
+2022-03-09T02:38:13.993Z [primeiroProjeto] info: API em execução
+2022-03-09T02:38:36.112Z [primeiroProjeto] info: GET /account
+2022-03-09T02:38:41.487Z [primeiroProjeto] info: POST /account- {"id":8,"nome":"Ciclano","saldo":98}
+2022-03-09T02:39:06.579Z [primeiroProjeto] info: GET /account
+2022-03-09T02:39:42.359Z [primeiroProjeto] info: DELETE /account/:id - 9
+2022-03-09T02:40:46.061Z [primeiroProjeto] info: GET /account
+2022-03-09T02:41:56.070Z [primeiroProjeto] info: POST /account- {"id":9,"nome":"ciclano da silva","saldo":89}
+2022-03-09T22:47:45.244Z [primeiroProjeto] info: API em execução
+2022-03-09T22:48:45.710Z [primeiroProjeto] info: API em execução
+2022-03-09T22:49:47.158Z [primeiroProjeto] info: POST /account- {"id":10,"nome":"Lucas","saldo":80}
+2022-03-09T22:58:29.459Z [primeiroProjeto] info: API em execução

@@ -1,5 +1,5 @@
 {
-  "nextId": 8,
+  "nextId": 11,
   "accounts": [
     {
       "id": 1,
@@ -32,6 +32,21 @@
       "id": 7,
       "nome": "Ciclano",
       "saldo": 98
+    },
+    {
+      "id": 8,
+      "nome": "Ciclano",
+      "saldo": 98
+    },
+    {
+      "id": 9,
+      "nome": "ciclano da silva",
+      "saldo": 89
+    },
+    {
+      "id": 10,
+      "nome": "Lucas",
+      "saldo": 80
     }
   ]
 }
