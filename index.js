@@ -8,17 +8,17 @@ import cors from "cors"
 global.fileName = "accounts.json"
 
 const { combine, timestamp, label, printf } = winston.format
-const myFormat = printf(({ level, message, label, timestamp}) => {
+const myFormat = printf(({ level, message, label, timestamp }) => {
     return `${timestamp} [${label}] ${level}: ${message}`
 })
 global.logger = winston.createLogger({
     level: "silly",
     transports: [
-        new (winston.transports.Console)(),
-        new (winston.transports.File)({filename: "primeiroProjeto.log"})
+        new(winston.transports.Console)(),
+        new(winston.transports.File)({ filename: "pizzariaAPI.log" })
     ],
     format: combine(
-        label({ label: "primeiroProjeto"}),
+        label({ label: "pizzariaAPI" }),
         timestamp(),
         myFormat
     )
@@ -31,7 +31,7 @@ app.use(cors())
 app.use("/account", accountsRouter)
 
 
-app.listen(3000, async () => {
+app.listen(3000, async() => {
     try {
         await readFile("accounts.json")
         logger.info('API em execução')
